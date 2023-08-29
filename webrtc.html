@@ -1,0 +1,239 @@
+<html>
+  <head>
+    <title>
+      Navigating the WebRTC Wonderworld: Exploring Peer-to-Peer Magic✨
+    </title>
+    <link rel="stylesheet" href="./webrtc.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baskervville|Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mainBorder">
+      <div id="mainHeading">
+        Navigating the WebRTC Wonderworld: Exploring Peer-to-Peer Magic✨
+      </div>
+
+      <div id="mainBody">
+        Have you ever wondered how video calls magically happen in your browser?
+        <br /><br />
+        I recently developed a project where I explored in-depth about what
+        WebRTC is and how does it actually works.
+        <br /><br />
+        I will try to explain everything about it here in plain english! I hope
+        you like reading it. :)
+        <br /><br />
+        Ready? Let's go!
+      </div>
+
+      <div id="contentImages">
+        <center>
+          <img src="img1.gif" width="300" height="" />
+        </center>
+      </div>
+
+      <div id="majorHeading">What is WebRTC?</div>
+
+      <div id="mainBody">
+        WebRTC stands for <u>Web Real-Time Communication</u>. It's like the
+        internet's way of saying, "Hey, let's have a direct conversation without
+        any middlemen!" ✨
+
+        <br /><br />
+
+        In simpler terms, WebRTC lets you make video and audio calls, share
+        files, and even play games with your friends in real-time, all straight
+        from your web browser. No need to download extra apps or plugins! 🚀🌐
+
+        <div id="contentImages">
+          <center>
+            <img src="img4.webp" width="300" height="" />
+          </center>
+        </div>
+
+        WebRTC is the "behind-the-scenes" wizardry that connects your browser
+        directly to your friends' browsers, creating a
+        <b><i>peer-to-peer</i></b> connection. 🧙‍♂️🔗
+
+        <br /><br />
+
+        Now, let's understand what a peer is and what is a peer-to-peer
+        connection?
+      </div>
+
+      <div id="majorHeading">What is Peer-to-Peer Connection?</div>
+
+      <div id="mainBody">
+        Alright, let's dive into the world of "peers" and "peer-to-peer"
+        connections! 🌐🤗
+
+        <br /><br />
+
+        Imagine you and your friend are having a secret chat. In this techy
+        scenario, you and your friend are like peers. 👫🌟 Each of you has equal
+        powers, and you can talk directly to each other without any middle
+        person getting in the way. It's like having a private conversation in a
+        crowded room! 🗣️🔒
+
+        <br /><br />
+
+        Now, let's apply this idea to the digital realm. In the magical land of
+        the internet, devices like your computer or smartphone can also be
+        peers. 🖥️📱 And when these devices connect directly to each other to
+        share information without bothering servers or intermediaries, that's
+        what we call a peer-to-peer (P2P) connection! 🌐🔗
+
+        <div id="contentImages">
+          <center>
+            <img src="img5.jpeg" width="400" height="" />
+          </center>
+        </div>
+
+        These connections are super handy for things like video calls, online
+        gaming, and sharing files quickly. It's like having a digital
+        walkie-talkie with your pals. 📞🎮📁 And the best part? Peer-to-peer
+        connections can be faster and more private since your data takes the
+        express route between you and your buddy. 🚀🔒
+
+        <br /><br />
+
+        Simple right?
+        <i>Let's dive a little more</i>
+        <br />
+        Its important to understand a few things quickly before moving on. I'll
+        briefly list them down.
+        <br /><br />
+        <i style="font-size: 12px">
+          There are tons of resources available on the internet to read for each
+          of them :)
+        </i>
+
+        <br /><br />
+        1. <u>Offer</u>: When two devices want to connect, one generates an
+        invitaion called offer for the other device and sends it. Another device
+        recieves this offer and generates an answer for the first device that
+        includes the communication details.
+
+        <br /><br />
+        This is called a handshake.
+
+        <div id="contentImages">
+          <center>
+            <img src="img2.jpeg" width="300" height="" />
+          </center>
+        </div>
+
+        2. <u>Singaling</u>: To exchange the offers and answers, and sort of
+        complete the handshake, we need a something called a "Singaling-Server".
+        It basically lets them share details of offer and answer via a seperate
+        mechanism.
+
+        <br /><br />
+
+        3. <u>ICE (Interactive Connectivity Establishment)</u>: ICE Servers
+        helps devices discover the best way to communicate, especially if
+        they're behind different network obstacles.
+
+        <br /><br />
+
+        4. <u>STUN and TURN Servers</u>: Direct connections are tricky due to
+        obvious network restrictions. To tackle this we have something called
+        STUN and NAT. Without going much into details, STUN servers reveals the
+        public addresses, and TURN acts as a relay.
+
+        <br /><br />
+        <div id="contentImages">
+          <center>
+            <img src="img3.gif" width="300" height="" />
+          </center>
+        </div>
+
+        <i style="font-size: 12px"
+          >If that was difficult to understand, don't worry! most of these
+          things are pretty easy to implement and handled internally.</i
+        >
+      </div>
+
+      <div id="majorHeading">Types of network between P2P:</div>
+      <div id="mainBody">
+        Imagine a lot of users connecting at once (like a zoom meeting). How
+        would each user connect to every other user? Is there any sort of
+        structure?
+        <br /><br />
+        Yes! Mainly, there are 3 types:
+        <br /><br />
+
+        1. MESH
+        <br /><br />
+        In a MESH network, devices directly connect to every other device in a
+        web-like structure. Imagine a bunch of friends at a party, all chatting
+        with each other. It's a decentralized setup where each device is a peer,
+        ensuring direct communication between participants. However, it can get
+        pretty overwhelming and inefficient as the party gets bigger.
+
+        <div id="contentImages">
+          <center>
+            <img src="img7.png" width="400" height="" />
+          </center>
+        </div>
+
+        2. MCU (Multipoint Control Unit) 🎛️:
+        <br /><br />
+        Picture a party with a charismatic host. An MCU is like that host,
+        managing the connections and mixing audio and video streams from
+        participants. It's useful for larger gatherings, but like a host
+        juggling conversations, it can become a bottleneck if the number of
+        participants skyrockets.
+
+        <div id="contentImages">
+          <center>
+            <img src="img8.png" width="400" height="" />
+          </center>
+        </div>
+
+        3. SFU (Selective Forwarding Unit)
+        <br /><br />
+        Imagine a chatroom where only relevant messages are broadcasted. An SFU
+        does this for media streams. It receives all the streams and selectively
+        forwards them to the right participants. This way, it's like having
+        separate dance floors at the party, each catering to a different groove.
+
+        <div id="contentImages">
+          <center>
+            <img src="img6.png" width="400" height="" />
+          </center>
+        </div>
+      </div>
+
+      <div id="majorHeading">Conclusion 🎺</div>
+      <div id="mainBody">
+        <br />
+
+        And with that, dear reader, we've uncovered the captivating world of
+        WebRTC! 🌐🎉 From its spellbinding peer-to-peer connections that whisk
+        your conversations across continents, to its magical media streaming
+        that turns your voice and video into virtual wonders, WebRTC has truly
+        transformed the way we connect online. 🧙‍♂️💬✨
+
+        <div id="contentImages">
+          <center>
+            <img src="img9.gif" width="400" height="" />
+          </center>
+        </div>
+
+        Hope you enjoyed reading this short blog!
+        <br /><br />
+        Happy Coding!❤️
+      </div>
+    </div>
+  </body>
+</html>
